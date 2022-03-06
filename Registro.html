@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Registro.css">
+    <script type="text/javascript" src="script/ValidRegistro.js"></script>
+
+</head>
+<body>
+
+    <form id="form" action=".index.html" method="get">
+
+        <h1>Formulario de Registro</h1>
+
+        <p type="Nombre"> <input type="text" id="Nombre" name="Nombre" placeholder="Nombre"></p>
+
+        <p type="Apellido"><input type="text" id="Apellido" name="Apellido" placeholder="Apellido"></p>
+
+        <p type="Fecha de Nacimiento"><input type="date" name="Fnacimiento" id="Fnacimiento"></p>
+
+        <p type="Edad"><input type="number" name="Edad" id="Edad" placeholder="Edad"></p>
+
+        <p type="Correo"><input type="email" name="email" id="email" placeholder="Correo Electronico"></p>
+
+        <p type="Usuario"><input type="text" id="Usuario" name="Usuario" placeholder="Usuario"></p>
+
+        <p type="Contraseña"><input type="password" name="password" id="password" placeholder="Contraseña"></p>
+
+        <p type="Confirmar Contraseña"><input type="password" name="Cpassword" id="Cpassword" placeholder="Confirmar Contraseña"></p>
+
+        <div id="contenedor">
+
+            <p type="Usted ha sufrido alguna enfermedad"> <input type="checkbox" name="Check1" id="enfermedad" onchange=showContent(1)></p>
+
+            <div id="divenfermedad">
+
+                <p type="¿Ha sido una enfermedad contagiosa?"> <input type="checkbox" name="enfermedadContagiosa" id="enfermedadCont" onchange=showContent(2)></p>
+
+                <div id="subdivenfermedad">
+
+                    <p type=" Indique que enfermedades a sufrido">
+                        <textarea name="enfermedades" cols="42" rows="10"></textarea>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+    
+    
+</body>
+</html>
